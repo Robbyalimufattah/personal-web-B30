@@ -24,9 +24,11 @@ nav div.left-side {
 }
 
 nav div.right-side {
-  padding-right: 90px;
+  flex: 50%;
+  padding: 9px;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 nav ul {
@@ -36,7 +38,7 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-left: 40px;
+  /* margin-left: 40px; */
   padding: 12px;
 }
 
