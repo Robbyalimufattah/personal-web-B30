@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="styleForm.css">
+    </head>
+    <body>
+
+        <nav>
+            <div class="left">
+                <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
+            
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </nav>
+
+        <div>
+        <form>
+            <div>
+
+                <h3 style="text-align: center;  color: orangered;">Contact Form</h3>
+
+                <div>
+                    <label for="input-name">Name</label>
+                    <input id="input-name" type="text" placeholder="your name">
+                </div>
+
+                <div>
+                    <label for="input-email">Email</label>
+                    <input id="input-email" type="email" placeholder="your email">
+                </div>
+
+                <div>
+                    <label for="input-phone">Phone Number</label>
+                    <input id="input-phone" type="number" placeholder="phone number">
+                </div>
+
+                <h4>Choose Your Skill</h4>
+                <div class="skill">
+                    <input type="checkbox" id="html" value="HTML">
+                    <label for="html">HTML</label>
+
+                    <input type="checkbox" id="css" value="CSS">
+                    <label for="css">CSS</label>
+                </div>
+
+                <div>
+                    <label for="input-subject">Subject</label>
+                    <select id="input-subject">
+                    <option value="">Select Here</option>
+                    <option>Privacy Police</option>
+                    <option>Problem With Our Site</option>
+                    <option>I'm Hiring</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="input-message">Your Massage</label>
+                    <textarea id="input-message"placeholder="input message" cols="20" rows="8"></textarea>
+                </div>
+                    
+                    <button type="button" onclick="submitData()">Submit</button>
+                    
+            </div>
+        </form>
+
+        <script src="form.js"></script>
+
+    </body>
+</html>

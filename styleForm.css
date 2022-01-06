@@ -1,0 +1,226 @@
+/* body{
+    width: 100%;
+    height: 100vh;
+} */
+
+/* CSS untuk mengatur semua font dan jarak yg ada di personal web */
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS untuk mengatur semua navigasi */
+nav{
+    background-color: white;
+    display: flex;
+    height: 7vh;
+    box-shadow: 0px 0px 30px rgb(224, 224, 224);
+}
+
+/* CSS untuk mengatur semua navbar yang ada di sebelah kiri */
+nav .left{
+    /* background-color: beige; */
+    flex: 50%;
+    padding: 10px;
+    padding-left: 90px;
+    display: flex;
+    align-items: center;
+}
+
+/* CSS untuk mengatur tulisan Home & Blog */
+nav .left li{
+    display: inline;
+}
+
+/* CSS untuk mengatur logo di navbar sebelah kiri */
+nav .left ul li a{
+    color: rgb(255, 102, 0);
+    font-weight: 700;
+    margin-left: 40px;
+    padding: 12px;
+    text-decoration: none;
+}
+
+/* CSS untuk mengatur navbar bagian  sebelah kanan */
+nav .right{
+    /* background-color: beige; */
+    flex: 50%;
+    padding: 9px;
+    padding-right: 90px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* CSS untuk mengatur tombol button contact me */
+nav .right a{
+    background-color: orangered;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* CSS untuk mengatur semua content yg ada di dalam personal web */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 93vh;
+}
+
+/* CSS untuk mengatur semua section dibagian container */
+.container .section{
+    display: flex;
+    width: 85%;
+}
+
+/* CSS untuk mengatur semua content yg ada di sebelah kiri */
+.section .left{
+    /* background-color: purple; */
+    flex: 30%;
+}
+
+/* CSS untuk mengatur card */
+.card{
+    border: 2px solid rgb(216, 216, 216); 
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(248, 202, 187);
+}
+
+/* CSS untuk mengatur section skill card di sebelah kiri */
+.section .left .skill-card{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.section .left .skill-card div{
+    flex: none;
+}
+
+/* CSS untuk mengatur section gambar di sebelah kiri */
+.section .left .skill-card img{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    
+}
+
+/* CSS untuk mengatur semua content section di sebelah kanan */
+.section .right{
+    /* background-color: orangered; */
+    flex: 70%;
+    /* margin-top: 50px; */
+    padding-left: 30px;
+
+}
+
+/* CSS untuk mengatur section content di sebelah kanan */
+.section .right .skill-container{
+    display: flex;
+    margin-top: 20px;
+}
+
+/* CSS untuk mengatur jarak antar content */
+.section .right .skill-container div{
+    /* background-color: aqua; */
+    flex: 1;
+}
+
+/* CSS untuk mengatur section img disebelah kanan */
+.skill-container div img{
+    width: 50px;
+    height: 50px;
+    /* padding: 100px; */
+}
+
+/* CSS untuk mengatur jarak tulisan dan gambar di Find Me */
+h3 {
+    padding: 20px 0;
+}
+
+/* CSS untuk mengatur gambar socia media agar berada disamping */
+.section .right .right-skill-container{
+    display: flex;
+}
+
+/* CSS untuk mengatur jarak gambar */
+.section .right .right-skill-container div{
+    flex: none;
+}
+
+/* CSS untuk mengatur gambar yg berada di bawah Find Me*/
+.right-skill-container div img{
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+/* CSS untuk mengatur form yg ada didalam contact */
+form {
+    width: 400px; 
+    margin: 10px auto; 
+    font-weight: bold;
+}
+
+/* CSS untuk mengatur semua yg ada di dalam form */
+input[type=text],input[type=email],input[type=number], select, textarea {
+    background-color: white;
+    width: 100%;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    resize: none;
+    box-shadow: 0px 0px 10px rgb(180, 180, 180);
+}
+
+/* CSS untuk mengatur checkbox */
+.skill {
+    margin: 15px 0 20px 0px;
+}
+
+/* CSS untuk mengatur button */
+button {
+    background-color: rgb(253, 93, 34);
+    padding: 15px 35px;
+    margin-top: 10px ;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* CSS untuk mengatur web menjadi resposive ketika di set ke mobile */
+@media screen and (max-width: 600px){
+    /* body{
+        background-color: red;
+    } */
+    .container{
+        display: block;
+    }
+    .container .section{
+        flex-direction: column;
+        display: block;
+        margin: 50px auto;
+    }
+    .section .right{
+        padding-left: 5px;
+    }
+    nav .left {
+        padding: 5px;
+    }
+    .section .right .skill-container{
+        display: block;
+    }
+}
+/* @media screen and (min-width: 700px){
+    body{
+        background-color: violet;
+    }
+} */
