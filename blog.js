@@ -158,19 +158,14 @@ function getDistanceTime(time) {
 // jika tidak dia akan menapilkan 1 second ago
   if(distanceDay >= 1){
     console.log(`${distanceDay} day ago`);
-  } else {
-    if (distanceHours >= 1){
+  } else if (distanceHours >= 1){
     return(`${distanceHours} hours ago`);
-    } else {
-      if (distanceMinutes >= 1) {
-        return(`${distanceMinutes} minutes ago`);
-      } else {
-          return(`${distanceSecond} second ago`);
-      }
-    }
-  } 
+  } else if (distanceMinutes >= 1) {
+    return(`${distanceMinutes} minutes ago`);
+  } else {
+    return(`${distanceSecond} second ago`);
+  }
 }
-
 // array function, dimana ketika di jalankan dia akan menjalankan fungsi render blog ketika di di proses
 setInterval(() => {
   renderBlog()
