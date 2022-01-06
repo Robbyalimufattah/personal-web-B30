@@ -118,17 +118,18 @@ let month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'Au
 
 function getFullTime(time) {
 
-  let date = time.getDate()
-  let monthIndex = time.getMonth()
-  let year = time.getFullYear()
-  let hours = time.getHours()
-  let minutes = time.getMinutes()
+  let date = time.getDate() // mendapatkan tanggal
+  let monthIndex = time.getMonth() // mendapatkan bulan
+  let year = time.getFullYear() // mendapatkan tahun
+  let hours = time.getHours() // mendapatkan jam
+  let minutes = time.getMinutes() // mendapatkan menit
 
   let fullTime = `${date} ${month[monthIndex]} ${year} ${hours}:${minutes} WIB`
 
   return fullTime
 }
-
+// isi dari parameter time ada di potsAt di atas, yang isinya adalah new Date(), 
+// dari new Date(), di pecahkan/tampung di variabel dibawah
 function getDistanceTime(time) {
 
   let timePost = time

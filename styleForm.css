@@ -36,7 +36,6 @@ nav .left li{
 nav .left ul li a{
     color: rgb(255, 102, 0);
     font-weight: 700;
-    margin-left: 40px;
     padding: 12px;
     text-decoration: none;
 }
@@ -46,7 +45,6 @@ nav .right{
     /* background-color: beige; */
     flex: 50%;
     padding: 9px;
-    padding-right: 90px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -201,6 +199,15 @@ button {
     /* body{
         background-color: red;
     } */
+    nav .left {
+        padding: 5px;
+    }
+    nav .ul {
+        display: inline;
+    }
+    nav .right{
+        padding: 5px;
+    }
     .container{
         display: block;
     }
@@ -219,7 +226,7 @@ button {
         display: block;
     }
 }
-/* @media screen and (min-width: 700px){
+/* @media screen and (min-width: 600px){
     body{
         background-color: violet;
     }
