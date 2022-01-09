@@ -44,8 +44,6 @@ function submitData(){
         alert("email harus diisi")
     } else if (phone == ''){
         alert("phone harus diisi")
-    // } else if (skillHtml, skillCss == ''){
-    //     alert("skill harus diisi")
     } else if (subject == ''){
         alert("subject harus diisi")
     } else if (message == ''){
