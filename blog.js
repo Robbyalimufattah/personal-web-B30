@@ -111,7 +111,7 @@ function getDistanceTime(time) {
 
   let timePost = time
   let timeNow = new Date()
-  let distance = timeNow - timePost // milisecond
+  let distance = timeNow - timePost
 
   let milisecond = 1000 // dalam satu detik
   let secondInHours = 3600 // dalam 1 jam berapa detik
